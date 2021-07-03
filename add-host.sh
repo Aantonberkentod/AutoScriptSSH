@@ -1,3 +1,4 @@
+#!bin/bash
 rm /etc/v2ray/domain
 rm /var/lib/premium-script/ipvps.conf                                                                                   
 read -p "Hostname / Domain: " host
