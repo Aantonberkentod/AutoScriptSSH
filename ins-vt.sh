@@ -498,8 +498,7 @@ chmod +x xp-ws
 chmod +x xp-tr
 chmod +x xp-vless
 chmod +x certv2ray
-cd
-rm trojan.sh
+cd 
 mv /root/domain /etc/v2ray
 echo "0 0 * * * root xp-ws" >> /etc/crontab
 echo "0 0 * * * root xp-tr" >> /etc/crontab
