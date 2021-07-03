@@ -1,8 +1,10 @@
 #!/bin/bash
 apt install jq curl -y
-DOMAIN=hablessh.tech
+rm /etc/v2ray/domain
+rm /var/lib/premium-script/ipvps.conf
+DOMAIN=hablessh.me
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.hablessh.tech
+SUB_DOMAIN=${sub}.hablessh.me
 CF_ID=shokhibrifandi99@gmail.com
 CF_KEY=4f1d941fd48db8d68fb785aa1eba345ac8ae8
 set -euo pipefail
@@ -32,5 +34,6 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
      -H "Content-Type: application/json" \
      --data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}')
 echo "Host : $SUB_DOMAIN"
-echo $SUB_DOMAIN > /root/domain
+echo $SUB_DOMAIN > /etc/v2ray/domain
+echo $SUB_DOMAIN > /var/lib/premium-script/ipvps.conf
 rm -f /root/cf.sh
