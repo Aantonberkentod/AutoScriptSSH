@@ -63,7 +63,7 @@ Documentation=https://trojan-gfw.github.io/
 
 [Service]
 Type=simple
-ExecStart="$BINARYPATH" -c /etc/trojan/config.json
+ExecStart= $BINARYPATH -c /etc/trojan/config.json
 Type=simple
 KillMode=process
 Restart=no
