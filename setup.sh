@@ -54,7 +54,7 @@ echo ""  | tee -a log-install.txt
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - OpenSSH                 : 22"  | tee -a log-install.txt
 echo "   - OpenVPN                 : TCP 1194, UDP 2200, SSL 992"  | tee -a log-install.txt
-echo "   - Stunnel4                : 443,222, 777"  | tee -a log-install.txt
+echo "   - Stunnel4                : 443, 222, 777"  | tee -a log-install.txt
 echo "   - Dropbear                : 143, 109"  | tee -a log-install.txt
 echo "   - SSH-WS                  : 2082"  | tee -a log-install.txt
 echo "   - OVPN-WS                 : 2086"  | tee -a log-install.txt
@@ -79,7 +79,7 @@ echo "   - Dflate                  : [ON]"  | tee -a log-install.txt
 echo "   - IPtables                : [ON]"  | tee -a log-install.txt
 echo "   - Auto-Reboot             : [ON]"  | tee -a log-install.txt
 echo "   - IPv6                    : [OFF]"  | tee -a log-install.txt
-echo "   - Autoreboot On 00.00 GMT +7" | tee -a log-install.txt
+echo "   - Autoreboot On 05.00 GMT +7" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "------------------------------------------BY HAWENG GANS------------------------------------------" | tee -a log-install.txt
