@@ -1,5 +1,5 @@
 echo -e "-----------------------------------"
-echo -e "User              Masa Aktif Akun |"
+echo -e "User             Masa Aktif Akun "
 echo -e "-----------------------------------"                                                         
 cat /etc/trojan/akun.conf
 echo -e "================================="
