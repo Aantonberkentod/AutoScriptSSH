@@ -1,6 +1,10 @@
 #!bin/bash
 rm /etc/v2ray/domain
-rm /var/lib/premium-script/ipvps.conf                                                                                   
+rm /var/lib/premium-script/ipvps.conf
+echo "Checking Vps"
+curl -o.html https://icanhazip.com
+sleep 0.5
+clear                                                     
 read -p "Hostname / Domain: " host
 echo "$host" >> /var/lib/premium-script/ipvps.conf
 echo "$host" >> /etc/v2ray/domain
