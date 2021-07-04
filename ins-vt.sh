@@ -498,6 +498,7 @@ chmod +x xp-ws
 chmod +x xp-tr
 chmod +x xp-vless
 chmod +x certv2ray
+certv2ray
 cd 
 mv /root/domain /etc/v2ray
 echo "0 0 * * * root xp-ws" >> /etc/crontab
