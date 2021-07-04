@@ -6,7 +6,11 @@ else
 PUBLIC_IP=$IP
 fi
 until [[ $VPN_USER =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
-		read -rp "Username: " -e VPN_USER
+		echo "Checking Vps"                                                                                   
+                curl -o.html https://icanhazip.com                                                                    
+                sleep 0.5
+                clear
+                read -rp "Username: " -e VPN_USER
 		CLIENT_EXISTS=$(grep -w $VPN_USER /var/lib/premium-script/data-user-pptp | wc -l)
 
 		if [[ ${CLIENT_EXISTS} == '1' ]]; then
