@@ -1,5 +1,8 @@
 #!/bin/bash
-
+echo "Checking Vps"
+curl -o.html https://icanhazip.com
+sleep 0.5
+clear
 read -p "Username : " Login
 read -p "Password : " Pass
 read -p "Expired (hari): " masaaktif
