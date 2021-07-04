@@ -6,9 +6,9 @@ clear
 apt install jq curl -y
 rm /etc/v2ray/domain
 rm /var/lib/premium-script/ipvps.conf
-DOMAIN=hablessh.me
+DOMAIN=hablestore.me
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.hablessh.me
+SUB_DOMAIN=${sub}.hablestore.me
 CF_ID=shokhibrifandi99@gmail.com
 CF_KEY=4f1d941fd48db8d68fb785aa1eba345ac8ae8
 set -euo pipefail
@@ -41,3 +41,8 @@ echo "Host : $SUB_DOMAIN"
 echo $SUB_DOMAIN > /etc/v2ray/domain
 echo $SUB_DOMAIN > /var/lib/premium-script/ipvps.conf
 rm -f /root/cf.sh
+clear
+echo -e "BERHASIL MEMBUAT SUBDOMAIN BARU"                                                             
+echo "Host : $SUB_DOMAIN"
+echo "Harap Update certificate v2ray dengan"
+echo "Mengetikkan Perintah certv2ray"
