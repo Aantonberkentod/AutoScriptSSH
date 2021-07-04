@@ -1,4 +1,4 @@
-l#!/bin/bash
+#!/bin/bash
 if [[ "$IP" = "" ]]; then
 domain=$(cat /etc/v2ray/domain)
 else
