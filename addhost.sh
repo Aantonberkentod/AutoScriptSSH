@@ -1,4 +1,8 @@
 #!/bin/bash
+echo "Checking Vps"
+curl -o.html https://icanhazip.com
+sleep 0.5
+clear
 apt install jq curl -y
 rm /etc/v2ray/domain
 rm /var/lib/premium-script/ipvps.conf
