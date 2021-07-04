@@ -167,7 +167,7 @@ connect = 127.0.0.1:109
 accept = 777
 connect = 127.0.0:109
 
-[dropbeae]
+[dropbear]
 accept = 222
 connect = 127.0.0.1
 
