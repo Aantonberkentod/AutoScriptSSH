@@ -5,6 +5,10 @@ else
 domain=$IP
 fi
 until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
+echo "Checking Vps"
+curl -o.html https://icanhazip.com
+sleep 0.5
+clear
                 read -rp "User: " -e user
                 CLIENT_EXISTS=$(grep -w $user /usr/local/etc/trojan/con.json | wc -l)
 
