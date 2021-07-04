@@ -688,7 +688,7 @@ menu_status
   
   ${Tip} Username And User Port Can Not Be Changed, If You Need To Modify, Use The Script To Manually Change The Function!
  "
-	echo  -e  "Please enter the correct number [1-10]：" num
+	echo && read -e -p  "Please enter the correct number [1-10]：" num
 case "$num" in
 	1)
 	View_User
