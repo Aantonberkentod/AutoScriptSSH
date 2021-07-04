@@ -253,6 +253,8 @@ netfilter-persistent reload
 # download script
 cd /usr/bin 
 wget -O add-host "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/add-host.sh"
+wget -O addhost "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/addhost.sh
+wget -O mem-tr "https://raw.gihubusercontent.com/Aantonberkentod/AutoScriptSSH/main/mem-tr.sh
 wget -O about "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/about.sh"
 wget -O menu "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/menu.sh"
 wget -O usernew "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/usernew.sh"
@@ -275,6 +277,8 @@ wget -O clear-log "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptS
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 
 chmod +x add-host
+chmod +x addhost
+chmod +x mem-tr
 chmod +x menu
 chmod +x usernew
 chmod +x trial
