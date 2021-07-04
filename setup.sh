@@ -19,7 +19,8 @@ echo -e "${green}Permission Accepted...${NC}"
 fi
 mkdir /etc/v2ray
 mkdir /var/lib/premium-script;
-echo "Enter the VPS Subdomain Hostname, if not available, please click Enter"
+echo "Masukkan Domain Anda, Jika Anda Tidak Memiliki Domain"
+echo "Ketikkan Perintah addhost setelah proses instalasi Script Selesai"
 read -p "Hostname / Domain: " host
 echo "$host" >> /var/lib/premium-script/ipvps.conf 
 echo "$host" >> /etc/v2ray/domain
