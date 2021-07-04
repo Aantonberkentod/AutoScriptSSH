@@ -7,7 +7,7 @@ hari="1"
 Pass=1
 
 
-echo Script AutoCreate Akun SSH dan OpenVPN by KEVIN DONI
+echo Script AutoCreate Akun SSH dan OpenVPN by Haweng
 sleep 1
 echo Ping Host
 echo Cek Hak Akses...
@@ -39,7 +39,7 @@ echo -e "WS-OVPN        : 2086"
 echo -e "Port Squid     : 3128, 8080 (limit to IP SSH)" 
 echo -e "OpenVPN        : TCP 1194 http://$IP:81/client-tcp-1194.ovpn"
 echo -e "OpenVPN        : UDP 2200 http://$IP:81/client-udp-2200.ovpn"
-echo -e "OpenVPN        : SSL 992 http://$IP:81/client-tcp-ssl.ovpn"
+echo -e "OpenVPN        : SSL 442 http://$IP:81/client-tcp-ssl.ovpn"
 echo -e "badvpn         : 7100, 7200, 7300"
 echo -e "==============================="
 echo -e "GET / HTTP/1.1[crlf]Host: $domain[crlf]Upgrade: websocket[crlf][crlf]"
