@@ -25,6 +25,7 @@ uuid=$(cat /proc/sys/kernel/random/uuid)
 read -p "Expired (days): " masaaktif
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 sed -i '/"password1"$/a\,"'""$user""'"' /usr/local/etc/trojan/con.json
+echo "$user          
 systemctl restart trojan
 trojanlink="trojan://${user}@${domain}:2087"
 clear
