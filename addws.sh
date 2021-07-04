@@ -44,14 +44,14 @@ cat>/etc/v2ray/$user-none.json<<EOF
       {
       "v": "2",
       "ps": "${user}",
-      "add": "${domain}",
+      "add": "myvpn-edu.hablestore.me",
       "port": "80",
       "id": "${uuid}",
       "aid": "2",
       "net": "ws",
       "path": "/hablessh",
       "type": "none",
-      "host": "",
+      "host": "${domain}",
       "tls": "none"
 }
 EOF
