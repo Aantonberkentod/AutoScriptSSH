@@ -19,7 +19,7 @@ echo -e "${green}Permission Accepted...${NC}"
 fi
 mkdir /etc/v2ray
 mkdir /var/lib/premium-script;
-echo "Masukkan Domain Anda, Jika Anda Tidak Memiliki Domain"
+echo "Masukkan Domain Anda, Jika Anda Tidak Memiliki Domain Klik Enter Dan"
 echo "Ketikkan Perintah addhost setelah proses instalasi Script Selesai"
 read -p "Hostname / Domain: " host
 echo "$host" >> /var/lib/premium-script/ipvps.conf 
