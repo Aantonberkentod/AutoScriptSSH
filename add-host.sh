@@ -11,3 +11,5 @@ echo "$host" >> /etc/v2ray/domain
 sleep 1
 clear
 echo -e DOMAIN BERHASIL DITAMBAHKAN                                                                                            
+echo "Harap Update certificate v2ray dengan"
+echo "Mengetikkan Perintah certv2ray"
