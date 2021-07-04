@@ -1,5 +1,6 @@
 clear
-echo-e "checking vps"
+echo -e "checking vps"
+clear
 sleep 2
 echo -e "-----------------------------------"
 echo -e "User             Masa Aktif Akun "
