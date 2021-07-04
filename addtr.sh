@@ -10,7 +10,7 @@ curl -o.html https://icanhazip.com
 sleep 0.5
 clear
                 read -rp "User: " -e user
-                CLIENT_EXISTS=$(grep -w $user /usr/local/etc/trojan/con.json | wc -l)
+                CLIENT_EXISTS=$(grep -w $user /etc/trojan/config.json | wc -l)
 
                 if [[ ${CLIENT_EXISTS} == '1' ]]; then
 clear
@@ -24,8 +24,8 @@ sleep 0.5
 uuid=$(cat /proc/sys/kernel/random/uuid)
 read -p "Expired (days): " masaaktif
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
-sed -i '/"password1"$/a\,"'""$user""'"' /usr/local/etc/trojan/con.json
-echo "$user          
+sed -i '/"password1"$/a\,"'""$user""'"' /etc/trojan/config.json
+echo -e "$user               $exp" >> /etc/trojan/akun.conf          
 systemctl restart trojan
 trojanlink="trojan://${user}@${domain}:2087"
 clear
