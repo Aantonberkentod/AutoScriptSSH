@@ -71,7 +71,7 @@ echo -e "=============================-Trojan-=========================="
 echo -e "* addtr       : MEMBUAT Akun Trojan"
 echo -e "* deltr       : Menghapus Akun Trojan"
 echo -e "* renewtr     : Memperpanjang Masa Aktif Trojan"
-echo -e "* mem-tr      : Melihat Daftar Akun Trojan
+echo -e "* mem-tr      : Melihat Daftar Akun Trojan"
 echo -e "* cektr       : Cek User Login Trojan"
 echo -e ""
 echo -e "=============================-SYSTEM-=========================="
