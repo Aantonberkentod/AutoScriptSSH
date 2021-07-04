@@ -253,7 +253,7 @@ netfilter-persistent reload
 # download script
 cd /usr/bin 
 wget -O add-host "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/add-host.sh"
-wget -O addhost "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/addhost.sh
+wget -O addhost "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/addhost.sh"
 wget -O mem-tr "https://raw.gihubusercontent.com/Aantonberkentod/AutoScriptSSH/main/mem-tr.sh"
 wget -O about "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/about.sh"
 wget -O menu "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/menu.sh"
