@@ -31,11 +31,7 @@ wget https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/websoc
 wget https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 apt-get install unzip
 rm -f /root/ssh-vpn.sh
-rm -f /root/sstp.sh
-rm -f /root/wg.sh
-rm -f /root/sodosok.sh
 rm -f /root/websocket.sh
-rm -f /root/ssr.sh
 rm -f /root/ins-vt.sh
 rm -f /root/go.sh
 rm -f /root/ipsec.sh
@@ -52,14 +48,14 @@ echo ""  | tee -a log-install.txt
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - OpenSSH                 : 22"  | tee -a log-install.txt
 echo "   - OpenVPN                 : TCP 1194, UDP 2200, SSL 992"  | tee -a log-install.txt
-echo "   - Stunnel4                : 443, 222, 777"  | tee -a log-install.txt
+echo "   - Stunnel4                : 902, 222, 777"  | tee -a log-install.txt
 echo "   - Dropbear                : 143, 109"  | tee -a log-install.txt
 echo "   - SSH-WS                  : 2082"  | tee -a log-install.txt
 echo "   - OVPN-WS                 : 2086"  | tee -a log-install.txt
 echo "   - Squid Proxy             : 3128, 8080 (limit to IP Server)"  | tee -a log-install.txt
 echo "   - Badvpn                  : 7100, 7200, 7300"  | tee -a log-install.txt
 echo "   - Nginx                   : 81"  | tee -a log-install.txt
-echo "   - V2RAY Vmess TLS         : 8443"  | tee -a log-install.txt
+echo "   - V2RAY Vmess TLS         : 443"  | tee -a log-install.txt
 echo "   - V2RAY Vmess None TLS    : 80"  | tee -a log-install.txt
 echo "   - Trojan                  : 2087"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
